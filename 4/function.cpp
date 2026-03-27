@@ -3,21 +3,20 @@
 using namespace std;
 void print_result(int *arr, int idx) 
 {
-		cout << "arr[" << idx << "]: " << arr[idx] << endl;
+	cout << "arr[" << idx << "]: " << arr[idx] << endl;
 }
 
 int main(int argc, char *argv[])
 {
-		int arr[BUFLEN];
-			int i;
+	int arr[BUFLEN];
+	int i;
 
-				for (i=0; i<BUFLEN; i++)
-							arr[i] = BUFLEN-i;
+	for (i=0; i<BUFLEN; i++)
+		arr[i] = BUFLEN-i;
 
-								print_result(arr, 0);
-									print_result(arr, 3);
-										print_result(arr, 7);
+	print_result(arr, 0);
+	print_result(arr, 3);
+	print_result(arr, 7);
 
-											return 0;
+	return 0;
 }
-
