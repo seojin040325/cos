@@ -1,32 +1,19 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
-int modulo(int a, int b)
-{
-		int ret;
-			ret = a % b;
-
-				if (ret < 0)
-							ret += b;
-
-								return ret;
-}
-
 int main(int argc, char *argv[])
 {
-		int a, b, c;
-			if (argc != 3) {
-						cout << "Please insert two numbers" << endl;
-								return 0;
-									}
+	int x;
+	cout << "Enter a number: ";
+	cin >> x;
 
-										a = atoi(argv[1]);
-											b = atoi(argv[2]);
-												//c = a % b;
-													c = modulo(a, b);
-
-														cout << a << " mod " << b << " = " << c << endl;
-
-															return 0;
+	switch (x) {
+		case 1:
+			cout << "You entered 1" << endl;
+		case 2:
+			cout << "You entered 2" << endl;
+			break;
+		default:
+			cout << "You entered unknown number" << endl;
+	}
+	return 0;
 }
-
